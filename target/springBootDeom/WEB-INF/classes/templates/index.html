@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登录页</title>
+    <link th:rel="stylesheet" th:href="@{/css/reset.css}">
+    </link>
+    <link th:rel="stylesheet" th:href="@{/css/supersized.css}">
+    </link>
+    <link th:rel="stylesheet" th:href="@{/css/style.css}">
+    </link>
+</head>
+
+<body>
+<div class="page-container">
+    <h1>登录</h1>
+    <form action="/user/login" method="post">
+        <input type="text" name="username" class="username" placeholder="用户名"/>
+        <input type="password" name="password" class="password" placeholder="密码"/>
+        <button type="submit">提交</button>
+        <div class="error"><span>+</span></div>
+    </form>
+    <div class="connect">
+        <p>Or connect with:</p>
+        <p>
+            <a class="facebook" href=""></a>
+            <a class="twitter" href=""></a>
+        </p>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script th:src="@{/js/jquery-1.8.2.min.js}"></script>
+<script th:src="@{/js/supersized.3.2.7.min.js}"></script>
+<script th:src="@{/js/supersized-init.js}"></script>
+<script th:src="@{/js/scripts.js}"></script>
+
+</body>
+</html>

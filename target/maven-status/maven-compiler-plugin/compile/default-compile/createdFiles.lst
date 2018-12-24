@@ -1,0 +1,8 @@
+com\duoduo\service\impl\UserLoginServiceImpl.class
+com\duoduo\controller\UserController.class
+com\duoduo\App.class
+com\duoduo\dao\UserDao.class
+com\duoduo\service\UserLoginService.class
+com\duoduo\mapper\UserLoginMapper.class
+com\duoduo\utils\JdbcUtil.class
+com\duoduo\controller\UserLoginController.class
