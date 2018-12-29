@@ -7,7 +7,6 @@
           <element id="module-output" name="springBootDeom" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.json:json:20140107" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.4.0.RELEASE" />
@@ -59,6 +58,8 @@
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.5.4" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.1" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.1.40" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:1.4.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-redis:1.7.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-keyvalue:1.1.2.RELEASE" />

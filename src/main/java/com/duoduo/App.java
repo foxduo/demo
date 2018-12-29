@@ -3,6 +3,7 @@ package com.duoduo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -16,8 +17,9 @@ import org.springframework.web.client.RestTemplate;
  * 在需要使用事务的方法上使用 @Transactional
  * 回滚只会对执行的时候进行回滚
  */
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @SpringBootApplication
-@EnableTransactionManagement
+//@EnableTransactionManagement
 public class App extends SpringBootServletInitializer {
 
 

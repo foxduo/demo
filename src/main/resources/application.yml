@@ -1,0 +1,7 @@
+server:
+ port: 8011
+ context-path: /springBootDemo
+spring:
+ thymeleaf:
+  suffic: .html
+  prefix: classpath:/templates/
