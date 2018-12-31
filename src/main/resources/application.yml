@@ -7,10 +7,10 @@ spring:
     prefix: classpath:/templates/
   datasource:
   #连接MySQL
-    url: jdbc:oracle:thin:@//200.200.6.30:1521/SITDB
-    username: SNSEXP
-    password: SNSEXP2016
-    driverClaseName: oracle.jdbc.driver.OracleDriver
+    url:
+    username:
+    password:
+    driverClaseName:
 #mybatis:
    #typeAliasesPackage: com.duoduo.mapper
    #mapperLocations: classpath:mapper/*.xml
