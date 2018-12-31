@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+
 /**
  * Created by FOX_duo on 2017/10/13.
  */
@@ -28,7 +29,7 @@ public interface UserLoginMapper {
      * 方式2：使用注解指定某个工具类的方法来动态编写SQL.
      */
     @SelectProvider(type = UserSqlProvider.class, method = "listByUsername")
-    List<User> listByUsername(String username);
+   List<User> listByUsername(String username);
 
     /**
      * 延伸：上述两种方式都可以附加@Results注解来指定结果集的映射关系.
@@ -40,8 +41,8 @@ public interface UserLoginMapper {
             @Result(property = "username", column = "USERNAME"),
             @Result(property = "password", column = "PASSWORD"),
             @Result(property = "mobileNum", column = "PHONE_NUM")
-    })
-    @Select("select * from t_user")
+   })
+   @Select("select * from t_user")
     List<User> listSample();
 
     /**
@@ -51,8 +52,8 @@ public interface UserLoginMapper {
     User get(@Param("username") String username, @Param("password") String password);
 
 
-    @SelectProvider(type = UserSqlProvider.class, method = "getBadUser")
-    User getBadUser(@Param("username") String username, @Param("password") String password);
+    //@SelectProvider(type = UserSqlProvider.class, method = "getBadUser")
+   //User getBadUser(@Param("username") String username, @Param("password") String password);
 
 
 

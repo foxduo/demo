@@ -21,9 +21,7 @@ public class UserController {
     public String name () {
 
         String url=environment.getProperty("spring.datasource.driverClaseName");
-
         System.out.println("url = " + url);
-
 
         return "index";
     }

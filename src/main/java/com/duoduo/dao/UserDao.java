@@ -1,27 +1,32 @@
 package com.duoduo.dao;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
-import java.util.Objects;
+import com.duoduo.bean.User;
+import com.duoduo.mapper.UserLoginMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
 
 /**
  * Created by FOX_duo on 2017/10/13.
  */
-@Repository
+@Component
 public class UserDao {
 
-    /*@Autowired
-    RedisUtil redisUtil;*/
+    @Autowired
+    UserLoginMapper mapper;
 
     public  int getUserLognCount(String msisdn, String password){
-        /*Object object=redisUtil.get("test1");
-        if(Objects.isNull(object))
-        {
-            redisUtil.set("test1",33333);
-            return 1;
-        }*/
+
+      //int count= mapper.getUserLognCount("13893580482","");
+      System.out.println("UserDao.getUserLognCount");
+
+        List<User> list=mapper.listByUsername("13758256823");
+        System.out.println(list.toString());
+
         return Integer.valueOf(5);
     }
 }

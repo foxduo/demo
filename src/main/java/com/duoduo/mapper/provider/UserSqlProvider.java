@@ -1,10 +1,5 @@
 package com.duoduo.mapper.provider;
 
-
-
-import org.apache.ibatis.jdbc.SQL;
-import org.springframework.data.repository.query.Param;
-
 /**
  * 主要用途：根据复杂的业务需求来动态生成SQL.
  * <p>
@@ -16,7 +11,7 @@ public class UserSqlProvider {
      * 方式1：在工具类的方法里,可以自己手工编写SQL。
      */
     public String listByUsername(String username) {
-        return "select * from t_user where username =#{username}";
+        return "select msisdn from SNS_USER_EXP_000 where msisdn =#{username}";
     }
 
     /**

@@ -1,8 +1,6 @@
 package com.duoduo.controller;
 
 import com.duoduo.service.UserLoginService;
-import jdk.nashorn.internal.runtime.Logging;
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,17 +22,11 @@ public class UserLoginController {
     private Logger log = LoggerFactory.getLogger(UserLoginController.class);
 
     @RequestMapping(value = "/user/login")
-
     public String userLogin(@RequestParam String username,@RequestParam String password){
-
-        //String msisdn= request.getParameter("msisdn");
-       ///String password = request.getParameter("password");
-
 
         if (log.isDebugEnabled()) {
             log.debug("Enter UserLoginController.userLogin ");
         }
-
 
         int count = userLoginService.userLogin(username, password);
 

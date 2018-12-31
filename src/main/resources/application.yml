@@ -2,6 +2,18 @@ server:
  port: 8011
  context-path: /springBootDemo
 spring:
- thymeleaf:
-  suffic: .html
-  prefix: classpath:/templates/
+  thymeleaf:
+    suffic: .html
+    prefix: classpath:/templates/
+  datasource:
+  #连接MySQL
+    url: jdbc:oracle:thin:@//200.200.6.30:1521/SITDB
+    username: SNSEXP
+    password: SNSEXP2016
+    driverClaseName: oracle.jdbc.driver.OracleDriver
+#mybatis:
+   #typeAliasesPackage: com.duoduo.mapper
+   #mapperLocations: classpath:mapper/*.xml
+  #configuration: classpath:/mybatis-config.xml
+  #配置项：开启下划线到驼峰的自动转换. 作用：将数据库字段根据驼峰规则自动注入到对象属性。
+  #map-underscore-to-camel-case: true
